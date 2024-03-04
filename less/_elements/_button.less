@@ -1,48 +1,5 @@
-.button{
-    font-style: @font-nunito-italic;
-    font-style: italic;
-    font-size: 11px;
-    border-radius: 2px;
-    background-color: @secondary-color;
-    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.20);
-    color: @primary-color;
-    text-transform: uppercase;
-    border: none;
-    transition: background-color 0.5s ease-out;
-    cursor: pointer;
-
-    &:hover{
-        background: darken(@secondary-color,10%);
-    }
-
-    &:active{
-        color: darken(@primary-color, 30%);
-        background-color: lighten(@secondary-color, 20%);
-    }
-
-}
-
-.header-button{
-    padding: 13px 33px;
-    cursor: pointer;
-}
-
-.main-home__button{
-    width: 207px;
-    height: 51px;
-    margin-right: 20px;
-}
-
-.transparent{
-    background-color: transparent;
-    border-radius: 2px;
-    border: 1px solid @primary-color;
-}
-
-
 //Section projects - slider
-.button-left,
-.button-right
+.slider__arrows
 {
     background: none;
     border: none;
@@ -53,8 +10,8 @@
     fill: @primary-color;
 }
 
-.button-left .arrow-left:hover,
-.button-right .arrow-right:hover
+.slider__arrows .arrow-left:hover,
+.slider__arrows .arrow-right:hover
 {
     fill:rgba(255, 255, 255, 0.30);
 }
@@ -62,7 +19,7 @@
 .arrow-right{
     transform: rotate(180deg);
 }
-.button-center{
+.dots{
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -73,7 +30,7 @@
     padding: 0;
 }
 
-.button-center:hover{
+.dots:hover{
     background-color: @primary-color;
 }
 
@@ -96,51 +53,4 @@
 .main-projects__slider-nav button:last-child{
     margin-left: 29px;
 }
-
-//Video section
-.main-video__button{
-    position: absolute;
-    align-items: center;
-    width: 85px;
-    height: 85px;
-    border-radius: 100%;
-    padding: 0;
-    border: none;
-    background-color: @secondary-color;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    cursor: pointer;
-    transition: background-color .2s ease-in-out;
-
-    & .play-ico{
-        position: absolute;
-        width: 0;
-        height: 0;
-        left: 40%;
-        transform: translate(-40%, 0);
-        border-left: 12px solid transparent;
-        border-right: 12px solid transparent;
-        border-bottom: 20px solid @primary-color;
-        rotate: 90deg;
-    }
-
-}
-
-.main-video__button:hover{
-    background-color: darken(@secondary-color, 10%);
-}
-
-.main-video__button:active{
-    background-color: lighten(@secondary-color, 10%);
-}
-.main-video__button:focus{
-    -webkit-box-shadow: 0px 0px 0px 1px @primary-color;
-    -moz-box-shadow: 0px 0px 0px 1px @primary-color;
-    box-shadow: 0px 0px 0px 1px @primary-color;
-}
-
-//Section Video -> Form request
 
