@@ -127,7 +127,6 @@ function initSlider(options) {
     function chageTitle(num) {
         if (!images[num].title) return;
         let sliderTitle = sliderText.querySelectorAll(".main-projects__text");
-        console.log(sliderTitle);
         sliderTitle.forEach((value, index) => {
             value.innerHTML = `${images[num].title[index]}`;
         });
