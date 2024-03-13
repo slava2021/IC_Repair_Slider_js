@@ -2,4 +2,29 @@
     //background: no-repeat url("../images/slider_1.jpg");
     width: 679px;
     height: 482px;
+    position: relative;
+
+    & .image{
+        //visibility: hidden;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 679px;
+        height: 482px;
+    }
+
+    & .image.active{
+        overflow: visible !important;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 99;
+    }
+
 }
+.main-projects__slider-nav{
+    & .slider__dots .dots.active{
+        background-color: @primary-color;
+    }
+}
+
